@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lucas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Título principal -->
+    <h1>Lucas Lopes Muniz da Silva</h1>
+
+    <!-- Parágrafo com autobiografia -->
+    <p>
+        Olá prazer me chamo Lucas, tenho 25 anos, moro em São Paulo e sou estudante de Analise e Desenvolvimento de Software.
+        Gosto de desenhar, aprender e estudar sobre tecnologia, culturas afro-brasileiras e filosofia oculta.
+    </p>
+<!-- Botão para interação -->
+<button id="mostrarMensagemBtn">Clique para ver uma mensagem!</button>
+
+<!-- Espaço para a mensagem aparecer -->
+<div id="mensagem"></div>
+    <!-- Lista não ordenada com 3 hobbies -->
+    <ul>
+        <li>Dormir</li>
+        <li>Ler</li>
+        <li>Fazer Bruxaria</li>
+    </ul>
+
+    <!-- Imagem representando um dos hobbies -->
+    <em>Meu hobbie favorito;</em>
+        <br>
+        <img src="eu.png" alt="Imagem de um dos meus hobbies favoritos" width="290" height="360"><br>
+
+    <!-- Tabela com nome e imagem de 3 países -->
+    <table border="1">
+                <tr>
+            <br><em>Lugares que eu gostaria de visitar;</em>
+            <th>Africa</th>
+            <th>Grecia</th>
+            <th>Egito</th>
+        </tr>
+        <tr>
+            <td><img src="Zangbeto.jpg"width=290></td>
+       
+            <td><img src="hekate.jpg" width="145"></td>
+        
+            <td><img src="egito.webp"width=175></td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Link para Youtube -->
+    <a href="https://www.youtube.com/watch?v=JsXZtlbHV6E"><b>Veja este video informativo!!!</b></a>
+    <!-- Link para o arquivo JavaScript -->
+    <script>
+        const botao = document.getElementById('mostrarMensagemBtn');
+        const divMensagem = document.getElementById('mensagem');
+
+        botao.addEventListener('click', () => {
+            divMensagem.innerHTML = `
+                <p><em>“Amigo mágico, que tuas sombras se tornem luz, e que a jornada interior revele os mistérios que só a alma pode desvendar.”</em></p>
+                <p>— Como dizia Carl Jung, <strong>“Quem olha para fora, sonha; quem olha para dentro, desperta.”</strong></p>
+            `;
+        });
+    </script>
+</body>
+</html>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo do título principal */
+h1 {
+    color: #4b0082;
+    text-align: center;
+}
+
+/* Estilo dos subtítulos */
+h2 {
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Parágrafos */
+p {
+    line-height: 1.6;
+}
+
+/* Lista de hobbies */
+ul {
+    background-color: #dcedf8;
+    padding: 15px 20px;
+    border-radius: 8px;
+    list-style-type: square;
+}
+
+/* Imagem com legenda centralizada */
+figure {
+    text-align: center;
+    margin: 30px 0;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #aaa6a6;
+    padding: 10px;
+    background-color: #cfcfcf;
+    text-align: center;
+}
+
+th {
+    background-color: #dcdcdc;
+}
+
+/* Link estilizado */
+a {
+    color: #a1556c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Arredondar bordas das imagens */
+img {
+    border-radius: 15px;
+}

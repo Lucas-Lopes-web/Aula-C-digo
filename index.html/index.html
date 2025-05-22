@@ -2,129 +2,76 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio - Lucas</title>
+    <title>Carta de Apresentação - Lucas</title>
     <style>
         * {
             box-sizing: border-box;
+        }
+        body {
+            background-color: #f2f4f8;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-        }
-
-        body {
-            background: linear-gradient(135deg, #00b4d8, #0077b6);
-            font-family: 'Poppins', sans-serif;
             color: #333;
-            min-height: 100vh;
         }
-
         .container {
-            max-width: 1000px;
-            background-color: #fff;
+            max-width: 900px;
+            background-color: #ffffff;
             margin: 50px auto;
             padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
         }
-
         h1 {
             text-align: center;
-            color: #0077b6;
+            color: #4a6fa5;
             margin-bottom: 10px;
             font-size: 2.8em;
         }
-
+        h2 {
+            color: #5f6f81;
+            margin-bottom: 10px;
+        }
         p {
-            text-align: center;
+            line-height: 1.7;
+            margin-bottom: 20px;
             font-size: 1.1em;
-            margin-bottom: 25px;
         }
-
-        .hobbies {
+        .tags {
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
-
-        .hobbies div {
-            background-color: #00b4d8;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 50px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            transition: transform 0.3s, background-color 0.3s;
-            cursor: default;
+        .tags div {
+            background-color: #dbe4ee;
+            color: #333;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 500;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
         }
-
-        .hobbies div:hover {
+        .tags div:hover {
             transform: translateY(-5px);
-            background-color: #0077b6;
+            background-color: #c9d6e3;
         }
-
-        .img-center {
-            display: block;
-            margin: 0 auto 30px;
-            max-width: 400px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 30px;
-        }
-
-        td {
-            padding: 15px;
-            text-align: center;
-            background-color: #f8f8f8;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        td img {
-            width: 120px;
-            border-radius: 12px;
-        }
-
-        a {
-            display: block;
-            width: fit-content;
-            margin: 0 auto 25px;
-            background-color: #0077b6;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        a:hover {
-            background-color: #023e8a;
-            transform: translateY(-3px);
-        }
-
         button {
             display: block;
-            margin: 0 auto;
-            padding: 12px 30px;
-            background-color: #00b4d8;
+            margin: 20px auto 0;
+            background-color: #4a6fa5;
             color: white;
             border: none;
+            padding: 12px 30px;
             border-radius: 10px;
             cursor: pointer;
             font-size: 16px;
             transition: background-color 0.3s, transform 0.3s;
         }
-
         button:hover {
-            background-color: #0077b6;
+            background-color: #3c5d8c;
             transform: translateY(-3px);
         }
-
         #mensagem {
             text-align: center;
             margin-top: 15px;
@@ -137,33 +84,38 @@
 
     <div class="container">
         <h1>Lucas</h1>
-        <p>Estudante de Engenharia de Software, apaixonado por tecnologia, criatividade, games e cultura afro-brasileira. Busco evoluir sempre, criando, aprendendo e inovando.</p>
 
-        <div class="hobbies">
-            <div>Desenhar</div>
-            <div>Música</div>
-            <div>Games</div>
+        <p>
+            Olá! Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> pela <strong>Faculdade Uninter</strong> desde março deste ano. Tenho interesse em tecnologia, desenvolvimento e inovação. Estou em busca de oportunidades para crescer profissionalmente, aplicando meus conhecimentos e minhas habilidades interpessoais.
+        </p>
+
+        <h2>Hard Skills</h2>
+        <div class="tags">
+            <div>Pacote Office (Básico ao Intermediário)</div>
+            <div>Faculdade em andamento</div>
+            <div>HTML, CSS, JavaScript (Iniciante)</div>
         </div>
 
-        <img src="imagens/desenho.jpg" alt="Desenho, um dos meus hobbies" class="img-center">
+        <h2>Soft Skills</h2>
+        <div class="tags">
+            <div>Aprendizado Contínuo</div>
+            <div>Empatia</div>
+            <div>Bom Relacionamento</div>
+            <div>Desenvoltura</div>
+        </div>
 
-        <table>
-            <tr>
-                <td>Japão<br><img src="imagens/japao.jpg" alt="Imagem do Japão"></td>
-                <td>Egito<br><img src="imagens/egito.jpg" alt="Imagem do Egito"></td>
-                <td>Itália<br><img src="imagens/italia.jpg" alt="Imagem da Itália"></td>
-            </tr>
-        </table>
+        <p>
+            Estou em constante evolução, gosto de aprender, colaborar e enfrentar desafios. Acredito no poder do conhecimento e da troca de experiências para gerar resultados.
+        </p>
 
-        <a href="https://www.tecmundo.com.br" target="_blank">Visite o TecMundo</a>
-
-        <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+        <button onclick="mostrarMensagem()">Clique para uma mensagem!</button>
         <div id="mensagem"></div>
     </div>
 
     <script>
         function mostrarMensagem() {
-            document.getElementById('mensagem').textContent = 'Obrigado por visitar meu portfólio!';
+            const mensagem = document.getElementById('mensagem');
+            mensagem.textContent = "Obrigado por conhecer minha apresentação! Espero fazer parte da sua equipe em breve!";
         }
     </script>
 

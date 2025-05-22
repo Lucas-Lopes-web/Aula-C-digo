@@ -11,17 +11,17 @@
     <h1>Lucas Lopes Muniz da Silva</h1>
 
     <!-- Parágrafo com autobiografia -->
-    <h4>
+    <p>
         Olá prazer me chamo Lucas, tenho 25 anos, moro em São Paulo e sou estudante de Analise e Desenvolvimento de Software.
         Gosto de desenhar, aprender e estudar sobre tecnologia, culturas afro-brasileiras e filosofia oculta.
-    </h4>
+    </p>
 <!-- Botão para interação -->
 <button id="mostrarMensagemBtn">Clique para ver uma mensagem!</button>
 
 <!-- Espaço para a mensagem aparecer -->
 <div id="mensagem"></div>
     <!-- Lista não ordenada com 3 hobbies -->
-    <h6>Essas são algumas coisas que gosto de fazer;</h6>
+    <p>Essas é uma das coisas que mais gosto de fazer;</p>
                                                 
     <ul>
         <li>Desenhar</li>
@@ -75,25 +75,26 @@ body {
     background-color: #f2f2f2;
     color: #333;
     padding: 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-/* Estilo do título principal */
+/* Título principal */
 h1 {
     color: #4b0082;
     text-align: center;
-}
-
-/* Estilo dos subtítulos */
-h2 {
-    color: #333;
-    margin-top: 30px;
+    font-size: 2.5em;
 }
 
 /* Parágrafos */
-p {
+p, h4 {
     line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Subtítulo */
+h6 {
+    font-size: 16px;
 }
 
 /* Lista de hobbies */
@@ -102,25 +103,21 @@ ul {
     padding: 15px 20px;
     border-radius: 8px;
     list-style-type: square;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Imagem com legenda centralizada */
-figure {
-    text-align: center;
-    margin: 30px 0;
+/* Imagens com bordas arredondadas */
+img {
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 
-figcaption {
-    margin-top: 8px;
-    font-style: italic;
-    color: #555;
-}
-
-/* Estilo da tabela */
+/* Tabela */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 
 th, td {
@@ -134,7 +131,7 @@ th {
     background-color: #dcdcdc;
 }
 
-/* Link estilizado */
+/* Link */
 a {
     color: #a1556c;
     text-decoration: none;
@@ -145,7 +142,27 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Arredondar bordas das imagens */
-img {
-    border-radius: 15px;
+/* Botão */
+button {
+    background-color: #4b0082;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #5e1aa5;
+}
+
+/* Mensagem */
+#mensagem {
+    background-color: #e8e8e8;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.15);
 }

@@ -2,13 +2,14 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carta de Apresentação - Lucas</title>
     <style>
         * {
             box-sizing: border-box;
         }
         body {
-            background-color: #f2f4f8;
+            background-color: #f5f7fa;
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
@@ -17,7 +18,7 @@
         .container {
             max-width: 900px;
             background-color: #ffffff;
-            margin: 50px auto;
+            margin: 40px auto;
             padding: 30px;
             border-radius: 20px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.08);
@@ -25,12 +26,19 @@
         h1 {
             text-align: center;
             color: #4a6fa5;
-            margin-bottom: 10px;
-            font-size: 2.8em;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+        h3 {
+            text-align: center;
+            color: #5f6f81;
+            margin-top: 0;
+            font-weight: normal;
         }
         h2 {
             color: #5f6f81;
             margin-bottom: 10px;
+            margin-top: 30px;
         }
         p {
             line-height: 1.7;
@@ -39,7 +47,7 @@
         }
         .tags {
             display: flex;
-            gap: 15px;
+            gap: 12px;
             flex-wrap: wrap;
             margin-bottom: 20px;
         }
@@ -78,23 +86,33 @@
             font-weight: bold;
             color: #555;
         }
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>Lucas</h1>
+        <h3>Estudante de Análise e Desenvolvimento de Sistemas</h3>
 
         <p>
-            Olá! Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> pela <strong>Faculdade Uninter</strong> desde março deste ano. Tenho interesse em tecnologia, desenvolvimento e inovação. Estou em busca de oportunidades para crescer profissionalmente, aplicando meus conhecimentos e minhas habilidades interpessoais.
+            Olá! Me chamo Lucas, moro em São Paulo e atualmente curso <strong>Análise e Desenvolvimento de Sistemas</strong> na <strong>Faculdade Uninter</strong> desde março deste ano. Sou uma pessoa curiosa, apaixonada por aprender e por entender como as coisas funcionam, tanto no mundo da tecnologia quanto na vida.
         </p>
 
-        <h2>Hard Skills</h2>
-        <div class="tags">
-            <div>Pacote Office (Básico ao Intermediário)</div>
-            <div>Faculdade em andamento</div>
-            <div>HTML, CSS, JavaScript (Iniciante)</div>
-        </div>
+        <p>
+            Além da área de tecnologia, gosto muito de explorar temas como <strong>filosofia oculta, espiritualidade, culturas afro-brasileiras</strong> e diversos outros assuntos que me fazem refletir sobre a existência e o universo. Também sou apaixonado por <strong>desenhar</strong>, pois acredito que a arte é uma das formas mais bonitas de expressar quem somos. No meu tempo livre, gosto de ler, ouvir música, jogar e estudar sobre assuntos diversos.
+        </p>
 
         <h2>Soft Skills</h2>
         <div class="tags">
@@ -102,10 +120,29 @@
             <div>Empatia</div>
             <div>Bom Relacionamento</div>
             <div>Desenvoltura</div>
+            <div>Curiosidade</div>
+            <div>Organização</div>
+        </div>
+
+        <h2>Hard Skills</h2>
+        <div class="tags">
+            <div>Pacote Office (Básico ao Intermediário)</div>
+            <div>Faculdade em andamento</div>
+            <div>Lógica e Raciocínio</div>
+        </div>
+
+        <h2>Hobbies e Interesses</h2>
+        <div class="tags">
+            <div>Desenhar</div>
+            <div>Ler</div>
+            <div>Filosofia Oculta</div>
+            <div>Espiritualidade</div>
+            <div>Jogos</div>
+            <div>Estudar temas diversos</div>
         </div>
 
         <p>
-            Estou em constante evolução, gosto de aprender, colaborar e enfrentar desafios. Acredito no poder do conhecimento e da troca de experiências para gerar resultados.
+            Acredito que somar diferentes conhecimentos e experiências faz de mim uma pessoa versátil, capaz de colaborar, aprender e crescer constantemente. Estou sempre disposto a enfrentar desafios, aprender coisas novas e contribuir com quem estiver ao meu lado.
         </p>
 
         <button onclick="mostrarMensagem()">Clique para uma mensagem!</button>
@@ -115,7 +152,7 @@
     <script>
         function mostrarMensagem() {
             const mensagem = document.getElementById('mensagem');
-            mensagem.textContent = "Obrigado por conhecer minha apresentação! Espero fazer parte da sua equipe em breve!";
+            mensagem.textContent = "Grato por conhecer um pouco mais sobre mim! Espero que possamos construir algo incrível juntos.";
         }
     </script>
 

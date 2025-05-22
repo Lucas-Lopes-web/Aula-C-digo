@@ -4,27 +4,60 @@
     <meta charset="UTF-8">
     <title>Lucas - Carta de Apresentação</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 30px auto;
-            padding: 10px;
-            background-color: #fafafa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
             color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
         h1 {
             text-align: center;
-            color: #2c3e50;
+            color: #0077b6;
+            margin-bottom: 20px;
         }
         p {
             text-align: justify;
-            line-height: 1.6;
-            margin-bottom: 20px;
+            line-height: 1.7;
+            font-size: 16px;
         }
         ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
             margin-bottom: 20px;
+        }
+        ul li {
+            background-color: #0077b6;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        ul li:hover {
+            background-color: #023e8a;
+        }
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+            width: 300px;
+            max-width: 90%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
         table {
             width: 100%;
@@ -32,83 +65,88 @@
             margin-bottom: 20px;
         }
         td {
-            padding: 8px;
             border: 1px solid #ccc;
-            vertical-align: middle;
+            padding: 10px;
+            text-align: center;
         }
         td img {
-            width: 100px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            border-radius: 6px;
+            width: 120px;
+            border-radius: 8px;
         }
         a {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #1e90ff;
+            display: block;
+            text-align: center;
+            background-color: #00b4d8;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
             text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
         }
         a:hover {
-            text-decoration: underline;
+            background-color: #0077b6;
         }
         button {
-            background-color: #1e90ff;
+            display: block;
+            background-color: #0077b6;
             color: white;
             border: none;
-            padding: 12px 20px;
-            border-radius: 6px;
+            padding: 12px 24px;
+            border-radius: 8px;
             cursor: pointer;
             font-size: 16px;
-            display: block;
-            margin: 0 auto 20px auto;
+            margin: 0 auto 15px;
+            transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #155dbe;
+            background-color: #023e8a;
         }
         #mensagem {
             text-align: center;
             font-style: italic;
             color: #555;
-            margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Lucas</h1>
+    <div class="container">
+        <h1>Lucas</h1>
 
-    <p>
-        Olá! Meu nome é Lucas, tenho 25 anos e moro em São Paulo. Sou estudante de Engenharia de Software, com grande interesse em tecnologia e desenvolvimento de sistemas. Sou dedicado, curioso e sempre busco aprender mais para crescer profissionalmente. Além disso, valorizo muito a diversidade cultural, especialmente as culturas afro-brasileiras, que ampliam minha visão de mundo e minha sensibilidade para trabalhar em equipes diversas.
-    </p>
+        <p>
+            Sou Lucas, 25 anos, estudante de Engenharia de Software em São Paulo. Apaixonado por tecnologia, criatividade e cultura afro-brasileira. Busco sempre aprender, inovar e crescer na área de desenvolvimento.
+        </p>
 
-    <ul>
-        <li>Desenhar</li>
-        <li>Ouvir música</li>
-        <li>Jogar videogame</li>
-    </ul>
+        <ul>
+            <li>Desenhar</li>
+            <li>Música</li>
+            <li>Games</li>
+        </ul>
 
-    <img src="imagens/desenho.jpg" alt="Imagem representando desenho, um dos meus hobbies">
+        <img src="imagens/desenho.jpg" alt="Imagem representando desenho, um dos meus hobbies">
 
-    <table>
-        <tr>
-            <td>Japão</td>
-            <td><img src="imagens/japao.jpg" alt="Imagem do Japão"></td>
-        </tr>
-        <tr>
-            <td>Egito</td>
-            <td><img src="imagens/egito.jpg" alt="Imagem do Egito"></td>
-        </tr>
-        <tr>
-            <td>Itália</td>
-            <td><img src="imagens/italia.jpg" alt="Imagem da Itália"></td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <td>Japão</td>
+                <td><img src="imagens/japao.jpg" alt="Imagem do Japão"></td>
+            </tr>
+            <tr>
+                <td>Egito</td>
+                <td><img src="imagens/egito.jpg" alt="Imagem do Egito"></td>
+            </tr>
+            <tr>
+                <td>Itália</td>
+                <td><img src="imagens/italia.jpg" alt="Imagem da Itália"></td>
+            </tr>
+        </table>
 
-    <a href="https://www.tecmundo.com.br" target="_blank" rel="noopener noreferrer">Visite o TecMundo</a>
+        <a href="https://www.tecmundo.com.br" target="_blank">Visite o TecMundo</a>
 
-    <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
-    <div id="mensagem"></div>
+        <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+        <div id="mensagem"></div>
+    </div>
 
     <script>
         function mostrarMensagem() {
